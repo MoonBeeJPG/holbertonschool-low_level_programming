@@ -7,6 +7,6 @@
     */
 	int main(void)
 	{
-		printf("%lu\n", sizeof();
+		printf("%lu\n", sizeof);
 		    return (0);
 	}

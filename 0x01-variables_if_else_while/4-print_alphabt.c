@@ -13,11 +13,8 @@ int main(void)
 	char letter;
 
 	for (letter = ('a') ; letter <= ('z') ; letter++)
-	{
+	if (letter != "100" && letter != "103")
 		putchar(letter);
-	}
-
-	if (letter != "e" && letter != "q")
 	putchar('\n');
 return (0);
 }

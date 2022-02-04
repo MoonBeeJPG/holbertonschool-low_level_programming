@@ -12,7 +12,7 @@ int main(void)
 
 	for (letter = 48 ; letter <= 57 ; letter++)
 	{
-			putchar(letter);
+		putchar(letter);
 	}
 		  putchar('\n');
 			return (0);

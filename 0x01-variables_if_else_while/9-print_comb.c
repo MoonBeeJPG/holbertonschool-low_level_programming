@@ -12,7 +12,7 @@ int main(void)
 	int max = 9;
 	int all;
 
-	for (letter = 48 ; letter <= max ; letter++)
+	for (letter = 0 ; letter <= max ; letter++)
 	{
 		all = letter + 48;
 		putchar(all);

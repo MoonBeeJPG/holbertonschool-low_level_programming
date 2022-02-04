@@ -17,7 +17,7 @@ int main(void)
 		putchar(letter);
 	}
 
-	if (letter != 101 && letter != 103)
+	if (letter != "e" && letter != "q")
 	putchar('\n');
 return (0);
 }

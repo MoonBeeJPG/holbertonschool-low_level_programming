@@ -7,23 +7,23 @@
 * Return: Always 0 (Sucess)
 *
 */
-int Last_Digit|
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n = 0)
-	{
-		printf("Last digit of %d is 0 and is 0 \n", n);
-		}
-	else if (n > 0)
-	{
-		printf("Last digit of %D is grather than 5 ", n);
-		}
-	else
-	{
-		}
-	return (0);
+int n, LastDigit;
+LastDigit = n % 10;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (LastDigit < 6)
+{
+printf("Last digit of %d is %d and is less than 6 and not 0 \n", n, LastDigit);
+}
+else if (LastDigit > 5)
+{
+printf("Last digit of %d is %d and is grather than 5 ", n, LastDigit);
+}
+else if (LastDigit == 0)
+{
+printf("Last digit of %d is %d and is 0\n", n, LastDigit);
+}
+return (0);
 }

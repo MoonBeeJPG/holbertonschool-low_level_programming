@@ -10,14 +10,16 @@
 
 int main(void)
 {
-	char letter;
-	char upcase;
+	int letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (letter = 'a' ; letter <= 'z' ; letter++)
+	{
 		putchar(letter);
-	putchar('\n');
-	for (upcase = 'A'; upcase <= 'Z'; letter++)
-		putchar(upcase);
-	putchar('\n');
+	}
+	for (letter = 65; letter <= 90; letter++)
+	{
+		putchar(letter);
+	}
+		putchar('\n');
 	return (0);
 }

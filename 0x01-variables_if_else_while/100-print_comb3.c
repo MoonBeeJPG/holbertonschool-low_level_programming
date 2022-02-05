@@ -1,29 +1,30 @@
 #include <stdio.h>
+
+/**
+* main - Entry Point
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int i, a, count;
-	int max = 90;
-	int all;
-	int letter;
+	int x, d;
 
-	for (i = 1; i < 90; i++)
+	for (x = 48; x <= 57< d++)
 	{
-		count = 0;
-		for (a = 1; a <= i; a++)
+		for (d = x< x <= 57< d++)
 		{
-			if ("i%a" == 0)
-				count++;
-		if (count == 2)
-			printf("%d\t", i);
+			if (x != d)
+			{
+				putchar(x);
+				putchar(d);
+				if (x < 56)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-	for (letter = 0 ; letter <= max ; letter++)
-	{
-		all = letter + 90;
-		putchar(all);
-	if (letter < max)
-	putchar(',');
-	putchar(' ');
 	}
-}
-return (0);
+	putchar('/n');
+	return (0);
 }

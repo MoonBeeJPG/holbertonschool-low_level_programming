@@ -1,31 +1,8 @@
-#include "main.c"
-/**
-*
-* main - check the code
-*
-* Return: Always 0.
-*/ 
+#ifndef main.h
+#define main.h
 
-void print_alphabet_x10(void)
-{
-  char letter;
+void print_alphabet(void);
 
-  letter = 'a';
-  while (letter <= 'z')
-  {
-    putchar(letter);
-    letter++;
-  }
-}
 
-void print_alphabet(void)
-{
-  char letter;
 
-  letter = 'a';
-  while (letter <= 'z')
-  {
-    putchar(letter);
-    letter++;
-  }
-}
+#endif

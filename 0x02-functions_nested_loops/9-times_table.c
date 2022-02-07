@@ -18,10 +18,11 @@ res = b *a;
 if (b != 0)
 {
 	_putchar(' ');
-}
+
 if (res < 10)
 {
 	_putchar(' ');
+}
 }
 if (res > 9)
 {

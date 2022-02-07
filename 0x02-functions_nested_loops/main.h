@@ -1,5 +1,4 @@
-#ifndef main.h
-#define main.h
+#include "main.c"
 /**
 *
 * main - check the code

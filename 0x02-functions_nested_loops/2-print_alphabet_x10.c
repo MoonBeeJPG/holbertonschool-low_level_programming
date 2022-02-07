@@ -18,7 +18,15 @@ void print_alphabet_x10(void);
 }
 int main(void)
 {
+	int count;
+	count=1;
+	start:
+	letter
+	count++;
+	if(count<=10)
+		goto start;
 	putchar('\n');
-	print_alphabetx_x10();
+	print_alphabet_x10();
 	return (0);
+	
 }

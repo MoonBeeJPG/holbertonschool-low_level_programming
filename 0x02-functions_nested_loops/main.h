@@ -1,4 +1,5 @@
-#include <stdio.h>
+#ifndef main.h
+#define main.h
 /**
 *
 * main - check the code

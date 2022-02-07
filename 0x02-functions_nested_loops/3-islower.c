@@ -2,7 +2,6 @@
 #include "main.h"
 
 /**
-*
 * _islower - chiquistrikis
 * @c: fe
 * Return: 1 if is lowercase, 0 if is upcase

@@ -1,12 +1,19 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
-* main - check the code
+* main - Entry Point
 *
-* Return: Always 0.
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-printf("_putchar");
+putchar('_');
+putchar('p');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
+putchar('\n');
 return (0);
 }

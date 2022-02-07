@@ -1,15 +1,11 @@
-#include <stdio.h>
 #include "main.h"
 /**
-* main - check the code
-*
-* Return: Always 0.
+* print_alphabet - hola
 */
-int main(void)
+void print_alphabet(void)
 {
 int i;
 for (i = 1; i <= 5; ++i)
 
-putchar('\n');
-return (0);
+_putchar('\n');
 }

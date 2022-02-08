@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
-* add - ojoiad
-* @alskd
-* Return: heeh
+*add - asas
+*@b: asd
+*@a: sdf
+* Return:asd
 */
-int add(int, int)
+int add(int a, int b)
 {
-	int a, b;
-	_putchar(a + b);
+		return (a + b);
 }

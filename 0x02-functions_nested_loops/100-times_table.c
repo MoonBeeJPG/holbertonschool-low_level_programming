@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * print_times_table -asdsa
-* @sd: grww
+* @n: grww
 * Return: hehe
 */
 void print_times_table(int n)

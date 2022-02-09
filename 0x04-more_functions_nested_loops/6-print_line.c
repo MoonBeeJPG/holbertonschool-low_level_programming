@@ -11,7 +11,7 @@ int count;
 
 if (n >= 1)
 {
-for (count = 0; count <= n; count++)
+for (count = 0; count < n; count++)
 {
 _putchar('_');
 }

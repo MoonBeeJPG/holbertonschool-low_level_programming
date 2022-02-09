@@ -16,6 +16,6 @@ for (count = 1; count <= 10; count++)
 			_putchar ((num % 10) + '0');
 		}
 	}
+	_putchar('\n');
 }
-_putchar('\n');
 }

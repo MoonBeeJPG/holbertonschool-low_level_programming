@@ -2,8 +2,7 @@
 
 /**
  *print_diagonal - yuk
- *@n: sdfx
- *
+ *@n: sdf
  * Return:fghj
 */
 void print_diagonal(int n)

@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *print_diagonal - yuk
- *@n: sdf
- * Return:fghj
+* print_diagonal - yuk
+* @n: sdf
+* Return:fghj
 */
 void print_diagonal(int n)
 {

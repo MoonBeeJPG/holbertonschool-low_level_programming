@@ -1,11 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
 * print_diagonal - yuk
 * @n: sdf
+* main - djqwd
 * Return:fghj
 */
+
 void print_diagonal(int n)
 {
 int x, e;
@@ -25,4 +26,8 @@ _putchar('\n');
 }
 
 _putchar('\n');
+}
+int main(void)
+{
+	return (0);
 }

@@ -1,14 +1,10 @@
 #include "main.h"
 /**
-*
-*
+* reset_to_98 - pass n from 402 to 98
+* @*n: jiji
 **/
 void reset_to_98(int *n)
 {
-	char p;
-
-	p = 98
 	*n = 402;
-	p = &*n;
-	
+	*n = 98;
 }

@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <unistd.h>
 
+int _atoi(char *s);
 void _puts(char *str);
 int _putchar(char c);
 void reset_to_98(int *n);

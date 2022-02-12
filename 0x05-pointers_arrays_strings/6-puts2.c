@@ -1,25 +1,19 @@
 #include "main.h"
-
 /**
- * main - check the code
- * @i: dqwdq
- * @str: dqdqw
- * @c: adiaidowa
- * Return: Always 0.
+ *puts2 - asd
+ *@str: asd
+ *
  */
 void puts2(char *str)
 {
-	char i, c;
-	i = *str;
+	int pos = 0;
+	int i = 0;
 
-	for (c = i; c <= 0; c++)
-	{
-		if (c >= 9)
-		{
-			_putchar((c / 10) + '0');
-			_putchar((c % 10) + '0');
-		}
-	_putchar(i);
-	}
+	while (str[pos] != '\0')
+		pos++;
+
+	for (i = 0; i < pos; i += 2)
+		_putchar(str[i]);
+
 	_putchar('\n');
 }

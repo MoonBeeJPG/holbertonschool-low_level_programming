@@ -8,4 +8,10 @@
 
 char *string_toupper(char *)
 {
-	for ()
+	int c;
+	if (c = 'a' && c = 'z')
+	{
+		for (c = 'A' && c = 'Z')
+			_putchar(c)
+			}
+}

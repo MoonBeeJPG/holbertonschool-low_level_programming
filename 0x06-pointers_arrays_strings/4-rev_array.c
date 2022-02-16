@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
 * reverse_array - dadw
 * @a: d
 * @n: f
-* main - da
 */
 
 void reverse_array(int *a, int n)
 {
-	int z, x, y;
+	int z;
+	int x;
+	int y;
 
 	z = n - 1;
 

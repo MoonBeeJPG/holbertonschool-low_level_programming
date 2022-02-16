@@ -16,8 +16,9 @@ char *cap_string(char *cap)
 	{
 		for (b = 0; string[b] != '\0'; b++)
 		{
-			if (cap[0] > 96 && string[0] < 123)
-				string[0] -= 32;
+			if (cap[0] > 96 && cap[0] < 123)
+				cap[0] -= 32;
+
 			else if (cap[a] == string[b])
 			{
 				if (cap[a + 1] > 96 && string[a + 1] < 123)

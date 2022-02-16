@@ -21,7 +21,7 @@ char *cap_string(char *cap)
 
 			else if (cap[a] == string[b])
 			{
-				if (cap[a + 1] > 96 && string[a + 1] < 123)
+				if (cap[a + 1] > 96 && cap[a + 1] < 123)
 				{
 					cap[a + 1] = cap[a + 1] - 32;
 				}

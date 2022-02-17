@@ -12,15 +12,15 @@ char *rot13(char *a)
 	int x, z;
 
 	for (x = 0; a[x] != '\0'; x++)
-    {
-        for (z = 0; z < 6; z++)
-        {
-            if (a[x] == abc[z])
-            {
-                a[x] = rot[z];
-                break;
-            }
-        }
-    }
+	{
+		for (z = 0; z < 6; z++)
+		{
+			if (a[x] == abc[z])
+			{
+				a[x] = rot[z];
+				break;
+			}
+		}
+	}
 return (a);
 }

@@ -25,4 +25,4 @@ char *leet(char *a)
 		}
 	}
 return (a);
-} 
+}

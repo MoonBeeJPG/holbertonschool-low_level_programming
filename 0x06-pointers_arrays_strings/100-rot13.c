@@ -11,7 +11,7 @@ char *rot13(char *a)
 	char rot[53] = "NOPQRSTUVWXYZnopqrstuvwxyz\0";
 	int x, z;
 
-	for (x = 0; abc[x] != '\0'; x++)
+	for (x = 0; a[x] != '\0'; x++)
 	{
 		for (z = 0; abc[z] != '\0'; z++)
 		{

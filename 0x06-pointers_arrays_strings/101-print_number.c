@@ -1,9 +1,11 @@
 #include "main.h"
-/**
-* print_number -  a function that prints an integer
-* @n: int
-*/
 
+/**
+*print_number - function that prints an integer.
+*@n: fghji
+*Return: 0
+*
+*/
 void print_number(int n)
 {
 	unsigned int dc, dig, nat = n;

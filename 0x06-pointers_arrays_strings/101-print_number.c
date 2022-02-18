@@ -6,8 +6,8 @@
 
 void print_number(int n)
 {
-	unsigned int decim, digit, natu = n;
-	double flot = 1;
+	unsigned int dc, dig, nat = n;
+	double f = 1;
 
 	if (n == 0)
 		_putchar('0');
@@ -15,20 +15,20 @@ void print_number(int n)
 	{
 		if (n < 0)
 		{
-			natu = n * -1;
+			nat = n * -1;
 			_putchar('-');
 		}
-		while (flot <= natu)
-			flot *= 10;
-		decim = flot / 10;
 
-		while (decim >= 1)
+		while (f <= nat)
+			f *= 10;
+		dc = f / 10;
+
+		while (dc >= 1)
 		{
-			digit = natu / decim;
-			_putchar(digit + '0');
-			natu = (natu - (decim * digit));
-			decim /= 10;
+			dig = nat / dc;
+			_putchar(dig + '0');
+			nat = (nat - (dc * dig));
+			dc /= 10;
 		}
 	}
 }
-

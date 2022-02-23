@@ -7,10 +7,10 @@
 */
 int _calcu(int n, int x)
 {
-	if (x == 1)
-		return (1);
-	else if (n % x == 0)
+	if (n % x == 0)
 		return (0);
+	else if (n == 1)
+		return (1);
 	else
 		return (_calcu(n, n - 1));
 }

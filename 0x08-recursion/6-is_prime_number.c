@@ -7,20 +7,30 @@
 */
 int _calcu(int n, int x)
 {
-	if (n % x == 0)
+	if (n <= 1)
+	{
 		return (0);
-	else if (n <= 1)
-		return (0);
+	}
 	else if (x == n)
+	{
 		return (1);
-	return (_calcu(n, n - 1));
+	}
+	else
+	{
+		if (n % x == 0 && x != 1 && x != n)
+		{
+			return (0);
+		}
+	}
+	return (_calcu(n, x + 1));
+	return (0);
 }
 /**
-* is_prime_number - returns 1 if the input integer is a prime number
+* is_prime_number - return 1 if the input integer is a prime number
 * @n: a variable
-* Return: 1 if the input is a prime, 0 otherwise
+* Return: function
 */
 int is_prime_number(int n)
 {
-	return (_calcu(n, n - 1));
+	return (_calcu(n, 1));
 }

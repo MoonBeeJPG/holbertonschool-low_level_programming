@@ -5,12 +5,16 @@
 */
 void _print_rev_recursion(char *s)
 {
-	if (*s == '\0')
+	int a = 0;
+
+	if (*s == a)
     {
+		putchar('\n');
+		return;
+    }
+	else
+	{
 		_putchar(*s);
 		_print_rev_recursion(s - 1);
-		*s = s[0];
-    }
-	else 
-		return;
+	}
 }

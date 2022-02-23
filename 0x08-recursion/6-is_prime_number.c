@@ -21,5 +21,8 @@ int _calcu(int n, int x)
 */
 int is_prime_number(int n)
 {
+	if (n < 1)
+		return (0);
+
 	return (_calcu(n, n - 1));
 }

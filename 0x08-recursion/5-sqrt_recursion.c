@@ -9,7 +9,7 @@ int _calculator(int x, int n)
 {
 	if (x * x == n)
 		return (x);
-	else if (x * x != n)
+	else if (x * x > n)
 		return (-1);
 	else
 		return (_calculator(n, x + 1));

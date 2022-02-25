@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	if (argc >= 2)
 	{
-		for (a = 0; a < argc; a++)
+		for (a = 1; a < argc; a++)
 		{
 			b = b * atoi(argv[a]);
 		}

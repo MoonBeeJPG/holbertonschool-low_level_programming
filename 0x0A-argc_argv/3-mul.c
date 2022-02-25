@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
 * main - a program that multiplies two numbers
 * @argc: counter
@@ -16,6 +17,7 @@ int main(int argc, char *argv[])
 		{
 			b = b * atoi(argv[a]);
 			printf("%d\n", b);
+			return (0);
 		}
 	}
 	printf("Error\n");

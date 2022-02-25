@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 		for (a = 0; a < argc; a++)
 		{
 			b = b * atoi(argv[a]);
-			printf("%d\n", b);
-			return (0);
 		}
+		printf("%d\n", b);
+		return (0);
 	}
 	printf("Error\n");
 	return (1);

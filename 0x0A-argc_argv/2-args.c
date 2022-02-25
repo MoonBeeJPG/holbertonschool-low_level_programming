@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-*
-*
-*
+* main - a program that prints all arguments it receives
+* @argc: count
+* @argv: value
+* Return: 0
 */
 int main(int argc, char *argv[])
 {
@@ -12,5 +13,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[a]);
 	}
-return 0;
+return (0);
 }

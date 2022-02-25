@@ -1,22 +1,23 @@
 #include "main.h"
+#include <stdlib.h>
 /**
-*
-*
-*
+* main - a program that multiplies two numbers
+* @argc: counter
+* @argv: value
+* Return: 0
 */
-int main (int agrc; char *argv)
+int main(int argc, char *argv[])
 {
-	int a, b, c = 0;
+	int a, b = 1;
 
-	if (argc[a])
-		printf("Error\n");
-		return (1);
-	else if (argc[b])
-		printf("Error\n");
-		return (1);
-	else
-		for (; c < argc; c++)
-			c = atoi(argv[a]) * atoi(argv[b])
-		printf("%s\n", c)
-	return 0;
+	if (argc > 2)
+	{
+		for (a = 0; a < argc; a++)
+		{
+			b = b * atoi(argv[a]);
+			printf("%d\n", b);
+		}
+	}
+	printf("Error\n");
+	return (1);
 }

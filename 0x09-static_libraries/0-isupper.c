@@ -1,20 +1,14 @@
 #include <ctype.h>
 #include "main.h"
-
 /**
-* _islower - chiquistrikis
-* @c: fe
-* Return: 1 if is lowercase, 0 if is upcase
+* _isupper - function that checks for uppercase character
+* @c: variable c
+* Return: 1 if is uppercase, 0 otherwise
 */
-
-int _islower(int c)
+int _isupper(int c)
 {
-if (c >= 'a' && c <= 'z')
-
-return (1);
-
-else
-
-return (0);
-
+	if (c >= 65 && c <= 90)
+		return (1);
+	else
+		return (0);
 }

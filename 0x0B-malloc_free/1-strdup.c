@@ -38,7 +38,7 @@ char *_strdup(char *str)
 		str2[i] = str[i];
 	}
 	str2 = '\0';
-	if (*str2 == 0)
+	if (!str2)
 	{
 		return (NULL);
 	}

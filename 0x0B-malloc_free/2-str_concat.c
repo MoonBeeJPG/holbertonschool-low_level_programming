@@ -30,11 +30,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (!s1)
 	{
-		return (b);
+		return (s2);
 	}
 	if (!s2)
 	{
-		return (a);
+		return (s1);
 	}
 	if (!s1 && !s2)
 	{

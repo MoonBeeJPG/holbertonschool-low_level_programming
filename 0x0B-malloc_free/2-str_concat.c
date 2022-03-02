@@ -8,22 +8,23 @@
 */
 int _strlen(char *str)
 {
-    int i = 0;
+	int i = 0;
 
-    while (*str != '\0')
-    {
-        i++;
-        str++;
-    }
-    return (i);
+	while (*str != '\0')
+	{
+		i++;
+		str++;
+	}
+	return (i);
 }
 /**
-*
-*
-*
+* str_concat - a function that concatenates two strings
+* @s1: first part of the string
+* @s2: second part of the string
+* Return: concatenation
 */
 char *str_concat(char *s1, char *s2)
-{ 
+{
 	int a, b, c, i;
 	char *conca;
 
@@ -35,7 +36,7 @@ char *str_concat(char *s1, char *s2)
 	a = _strlen(s1);
 	b = _strlen(s2);
 	c = a + b;
-	
+
 	conca = malloc(1 * (c + 1));
 
 	if (!conca)

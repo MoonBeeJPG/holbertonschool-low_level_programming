@@ -2,9 +2,9 @@
 #include <string.h>
 #include "main.h"
 /**
-*
-*
-*
+* _strlen - returns lenght
+* @str: pointer
+* Return: i
 */
 int _strlen(char *str)
 {
@@ -33,7 +33,7 @@ char *_strdup(char *str)
 	}
 
 	str2 = malloc(_strlen(str) + 1);
-	
+
 	if (str2 == 0)
 	{
 		return (NULL);

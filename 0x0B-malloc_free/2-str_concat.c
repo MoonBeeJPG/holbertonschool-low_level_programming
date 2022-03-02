@@ -28,7 +28,15 @@ char *str_concat(char *s1, char *s2)
 	int a, b, c, i;
 	char *conca;
 
-	if (!s1 || !s2)
+	if (!s1)
+	{
+		return (s2);
+	}
+	if (!s2)
+	{
+		return (s1);
+	}
+	if (!s1 && !s2)
 	{
 		return (NULL);
 	}

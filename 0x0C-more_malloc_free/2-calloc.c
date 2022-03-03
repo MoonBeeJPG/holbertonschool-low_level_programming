@@ -9,7 +9,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *point;
-	int a, i;
 
 	if (nmemb == 0)
 		return (NULL);

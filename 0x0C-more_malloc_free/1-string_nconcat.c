@@ -28,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *rslt;
 	unsigned int idx1, idx2;
 
-	rslt = malloc(_strlen(s1) + n);
+	rslt = malloc(_strlen(s1) + n * sizeof(*rslt));
 	if (!rslt)
 		return (NULL);
 	for (idx1 = 0; s1[idx1]; idx1++)

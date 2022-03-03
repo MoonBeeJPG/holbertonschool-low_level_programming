@@ -33,6 +33,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	point = malloc(size * nmemb);
+	if (!point)
+		return (NULL);
 	if (point)
 		_memset(point, 0, size * nmemb);
 	return (point);

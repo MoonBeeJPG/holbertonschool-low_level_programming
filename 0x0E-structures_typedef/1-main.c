@@ -3,7 +3,7 @@
 
 /**
  * main - check the code
- *
+ * init_dog - a
  * Return: Always 0.
  */
 int main(void)

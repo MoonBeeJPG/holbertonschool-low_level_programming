@@ -8,9 +8,19 @@
 */
 int (*get_op_func(char *s))(int, int)
 {	
-	if (s != ops[])
-		return (NULL)
-	while (s == ops[])
-		s(ops);
-	return (s);
+	op_t ops[] = {
+        	{"+", op_add},
+        	{"-", op_sub},
+        	{"*", op_mul},
+        	{"/", op_div},
+        	{"%", op_mod},
+        	{NULL, NULL}
+    };
+    int i;	
+	while (ops[i] != NULL)
+	{
+		if (s == ops[i])
+			return (ops[i].f)
+	}
+return (NULL);
 }

@@ -7,8 +7,10 @@
 * Return: Null
 */
 int (*get_op_func(char *s))(int, int)
-{
-
+{	
 	if (s != ops[])
-		return (NULL);
+		return (NULL)
+	while (s == ops[])
+		s(ops);
+	return (s);
 }

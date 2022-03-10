@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	op = gett_up_func(argv[2]);
+	op = get_op_func(argv[2]);
 
 	if (!(op) || (argv[2][1] != '0'))
 	{
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 
 	if ((argv[2][0] == '/' && argv[3][0] == '0') ||
-		(argv[2][0] == '%' && argv[3][0] == '/0'))
+		(argv[2][0] == '%' && argv[3][0] == '0'))
 	{
 		printf("Error\n");
 		exit(100);

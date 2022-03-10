@@ -12,7 +12,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *string;
 	string = va_arg(nlst, char *);
 
-	if (!string)
+	if (string == NULL)
 		printf("nil");
 	va_start(nlst, n);
 	for (i = 0; i < n;)

@@ -1,13 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "3-calc.h"
 /**
-*
-*
+* main - a program that performs simple operations.
+* 
 *
 */
-int main(int calc, int num1, int operator, int num2)
+int main(int argc, char *argv[])
 {
-typedef struct op
+	int num1, num2, res;
+	int (*op)(int, int);
 
-	argc[1] = ops[]
-	calc = ops.f(atoi(argc[0]), atoi(argc[2]))
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
+	num1 = atoi(argv[1]);
+	num2 = atoi (argv[3]);
+	op = gett_up_func(argv[2]);
+
+	if (!(op) || (argv[2][1] != '0'))
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	if ((argv[2][0] == '/' && argv[3][0] == '0') || (argv[2][0] == '%' && argv[3][0] == '/0'))
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	res = op(num1, num2);
+
+	printf("%d\n", res);
+
+	return (0);
+}

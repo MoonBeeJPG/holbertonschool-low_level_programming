@@ -3,8 +3,9 @@
 #include "3-calc.h"
 /**
 * main - a program that performs simple operations.
-* 
-*
+* @argc: elements
+* @argv: bytes
+* Return: 0
 */
 int main(int argc, char *argv[])
 {
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 
 	num1 = atoi(argv[1]);
-	num2 = atoi (argv[3]);
+	num2 = atoi(argv[3]);
 	op = gett_up_func(argv[2]);
 
 	if (!(op) || (argv[2][1] != '0'))
@@ -27,7 +28,8 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((argv[2][0] == '/' && argv[3][0] == '0') || (argv[2][0] == '%' && argv[3][0] == '/0'))
+	if ((argv[2][0] == '/' && argv[3][0] == '0') ||
+		(argv[2][0] == '%' && argv[3][0] == '/0'))
 	{
 		printf("Error\n");
 		exit(100);

@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	char *string;
 
-	if (!n)
+	if (!string)
 		printf("nil");
 	va_start(nlst, n);
 	for (i = 0; i < n;)

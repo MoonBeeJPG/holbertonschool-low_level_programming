@@ -47,23 +47,38 @@ void print_all(const char * const format, ...)
 	printf("\n");
 	va_end(list);
 }
-
+/**
+* print_char - print a char
+* @list: list
+*/
 void print_char(va_list list)
 {
 	printf("%c", va_arg(list, int));
 }
+/**
+* print_integer - print integer
+* @list: list
+*/
 void print_integer(va_list list)
 {
 	printf("%d", va_arg(list, int));
 }
+/**
+* print_float - print a float
+* @list: list
+*/
 void print_float(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
+/**
+* print_charchar - print a string
+* @list: list
+*/
 void print_charchar(va_list list)
 {
 	char *va;
-	
+
 	va = va_arg(list, char *);
 	if (va == NULL)
 	{

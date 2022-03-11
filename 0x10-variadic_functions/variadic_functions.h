@@ -17,7 +17,7 @@ void print_float(va_list list);
 void print_charchar(va_list list);
 
 /**
-* type - a function that prints anything
+* struct type - a function that prints anything
 * @argument: list
 * @f: pointer
 * Return: anything
@@ -25,8 +25,7 @@ void print_charchar(va_list list);
 
 typedef struct type
 {
-  char *argument;
-  
-  void (*f)(va_list list);
+char *argument;
+void (*f)(va_list list);
 } typef;
 #endif

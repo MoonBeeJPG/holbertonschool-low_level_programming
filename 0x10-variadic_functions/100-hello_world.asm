@@ -3,7 +3,7 @@
 #define STDOUT 1
 /**
 * main - a 64-bit program in assembly that prints Hello, World
-*
+* Return: exit
 */
 int main()
 {

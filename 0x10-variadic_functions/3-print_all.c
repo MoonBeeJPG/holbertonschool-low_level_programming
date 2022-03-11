@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 	size_t i = 0;
 	int j = 0;
 	char *separator = "";
-	
+
 	typef typel[] = {
 			{"c", print_char},
 			{"i", print_integer},
@@ -52,7 +52,8 @@ void print_float(va_list list)
 }
 void print_charchar(va_list list)
 {
-	int va;
+	char *va;
+	
 	va = va_arg(list, char *);
 	if (va == NULL)
 	{

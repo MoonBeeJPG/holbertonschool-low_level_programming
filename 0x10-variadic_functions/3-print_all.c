@@ -38,7 +38,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", separator);
 				typel[j].f(list);
-				separator = ",";
+				separator = ", ";
 			}
 			j++;
 		}

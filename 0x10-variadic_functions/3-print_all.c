@@ -23,9 +23,10 @@ void print_all(const char * const format, ...)
 
 	typef typel[] = {
 			{"c", print_char},
-			{"i", print_integer},
+			{"i", print_intieger},
 			{"f", print_float},
-			{"s", print_charchar}
+			{"s", print_charchar},
+			{"/0", NULL}
 	};
 
 	va_start(list, format);

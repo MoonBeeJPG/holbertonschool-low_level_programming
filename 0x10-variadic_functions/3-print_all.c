@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 	while (i < strlen(format))
 	{
 		j = 0;
-		while (typel[j].argument != NULL)
+		while (j < 4)
 		{
 			if (*typel[j].argument == format[i])
 			{
@@ -84,7 +84,6 @@ void print_charchar(va_list list)
 	if (va == NULL)
 	{
 		printf("(nil)");
-		return;
 	}
 	printf("%s", va);
 }

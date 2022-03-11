@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 	while (i < strlen(format))
 	{
 		j = 0;
-		while (j < 4)
+		while (typel[j].argument != NULL)
 		{
 			if (*typel[j].argument == format[i])
 			{

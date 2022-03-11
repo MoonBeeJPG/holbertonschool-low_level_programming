@@ -6,28 +6,59 @@
 */
 void print_all(const char * const format, ...)
 {
-	va_list formatl;
-	char *s;
-	float f;
-	int i, j, k;
-	char c;
+	va_list list;
+	size_t i = 0;
+	int j = 0;
+	char *separator = "";
+	
+	typef typel[] = {
+			{"c", print_char},
+			{"i", print_integer},
+			{"f", print_float},
+			{"s", print_charchar}
+	};
 
-	va_start(formatl, format);
-	s = av_arg(formatl, char *);
-	f = av_arg(formatl, float);
-	i = av_arg(formatl, int);
-	c = av_arg(formatl, char);
-	if (!s)
-		printf("(nil)");
-	while (j < formatl)
-		j++;
-	while (j < k)
-		k++;
-		
-		printf("%s", s);
-		printf("%f", f);
-		printf("%d", i);
-		printf("%c", c);
-printf("\n");
-va_end(formatl);
+	va_start(list, format);
+	while (i < strlen(format))
+	{
+		j = 0;
+		while (j < 4)
+		{
+			if (*typel[j].argument == format[i])
+			{
+				printf("%s", separator);
+				typel[j].f(list);
+				separator = ",";
+			}
+			j++;
+		}
+		i++;
+	}
+	printf("\n");
+	va_end(list);
 }
+
+void print_char(va_list list)
+{
+	printf("%c", va_arg(list, int));
+}
+void print_integer(va_list list)
+{
+	printf("%d", va_arg(list, int));
+}
+void print_float(va_list list)
+{
+	printf("%f", va_arg(list, double));
+}
+void print_charchar(va_list list)
+{
+	int va;
+	va = va_arg(list, char *);
+	if (va == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", va);
+}
+

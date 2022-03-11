@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 
 	typef typel[] = {
 			{"c", print_char},
-			{"i", print_intieger},
+			{"i", print_integer},
 			{"f", print_float},
 			{"s", print_charchar},
 			{"/0", NULL}

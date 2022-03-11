@@ -84,6 +84,7 @@ void print_charchar(va_list list)
 	if (va == NULL)
 	{
 		printf("(nil)");
+		break;
 	}
 	printf("%s", va);
 }

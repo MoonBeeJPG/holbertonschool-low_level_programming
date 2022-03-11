@@ -30,10 +30,10 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(list, format);
-	while (i < strlen(format))
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
-		while (j < 4)
+		while (typel[j].argument != NULL)
 		{
 			if (*typel[j].argument == format[i])
 			{

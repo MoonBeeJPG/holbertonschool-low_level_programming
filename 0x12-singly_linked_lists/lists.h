@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+
 /**
 * struct list- structure for the nodes
 * @str: strings

@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* snd_main - second main with a string
+* b_main - second main with a string
 */
 void b_main(void)
 {

@@ -5,16 +5,16 @@
 #include <string.h>
 #include <stdio.h>
 /**
-* struct strct_lst - structure for the nodes
+* struct list- structure for the nodes
 * @str: strings
 * @len: lenght o the strings
 * @next: next nodes
 */
-typedef struct strct_lst
+typedef struct list
 {
 char *str;
 unsigned int len;
-struct strct_lst *next;
+struct list *next;
 } list_t;
 
 void snd_main(void) __attribute__((constructor));

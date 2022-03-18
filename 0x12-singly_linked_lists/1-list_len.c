@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* list_len: adad
+* list_len - adad
 * @h: dewefa
 * Return: fqwfewd
 */

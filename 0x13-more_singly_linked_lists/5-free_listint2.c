@@ -9,14 +9,15 @@ void free_listint2(listint_t **head)
 {
 	listint_t *current, *nextnode;
 
+	*head = NULL;
 	current = *head;
 
+	if (*head == NULL)
+		return;
 	while (current != NULL)
 	{
 		nextnode = current->next;
 		free(current);
 		current = nextnode;
 	}
-	if (head == NULL)
-		printf("(nil)");
 }

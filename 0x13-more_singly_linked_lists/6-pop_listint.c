@@ -4,15 +4,19 @@
 * linked list, and returns the head node’s data (n).
 * @head: Header of the nodes 
 * Return: The head node's data (n)
+*
+* Auth: MoonBeeJPG
 */
 int pop_listint(listint_t **head)
 {
 	listint_t *deletenode;
 
+	deletenode = *head;
+
 	if (!head)
 		return (0);
-	*head = head->next;
-	delete (deletenode);
+	*head = (*head)->next;
+	free(deletenode);
 
-	return (head->n);
+	return ((*head)->n);
 }

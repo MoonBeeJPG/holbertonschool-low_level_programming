@@ -11,10 +11,10 @@ int pop_listint(listint_t **head)
 {
 	listint_t *deletenode;
 	int value;
-	
+
 	if (!*head)
 		return (0);
-	
+
 	deletenode = *head;
 	value = deletenode->n;
 	*head = deletenode->next;

@@ -17,7 +17,7 @@ void free_listint2(listint_t **head)
 	{
 		nextnode = current;
 		current = current->next;
-		free (nextnode);
+		free(nextnode);
 	}
 	*head = NULL;
 }

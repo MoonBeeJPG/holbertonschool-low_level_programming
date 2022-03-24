@@ -6,15 +6,15 @@
 */
 int counting(int a)
 {
-	int cnt = 0;
+	int counter = 0;
 
 	while (a != 0)
 	{
-		cnt++;
+		counter++;
 		a &= (a - 1);
 	}
 
-	return (cnt);
+	return (counter);
 }
 /**
 * flip_bits - a function that returns the number of bits you would need to

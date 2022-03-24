@@ -8,8 +8,8 @@
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int bit = 0;
-	int clearbit = ~(1 << index);
-	int mask = *n & clearbit;
+	int biti = ~(1 << index);
+	int bititi = *n & clearbit;
 
 	if (n == 0)
 		return (-1);
@@ -17,7 +17,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	if (index > 31)
 		return (-1);
 
-	*n = mask | (bit << index);
+	*n = bititi | (bit << index);
 
-	return (1);	
+	return (1);
 }

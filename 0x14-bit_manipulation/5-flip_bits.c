@@ -4,7 +4,7 @@
 * @a: variable
 * Return: counter
 */
-int counting(int a)
+int counting(unsigned long int a)
 {
 	long unsigned int counter = 0;
 

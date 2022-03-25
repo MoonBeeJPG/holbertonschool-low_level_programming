@@ -5,11 +5,19 @@
 */
 void print_binary(unsigned long int n)
 {
-	if (n)
-		print_binary(n - 1);
-	if (n & 1)
-		_putchar('1');
-	else
-		_putchar('0');
-	n >>= 1;
+	unsigned long int count;
+    int a = 0;
+
+	count = n;
+
+	while ((count >>= 1) > 0)
+		a++;
+
+	while (a >= 0)
+	{
+		if ((n >> a--) & 1)
+			 _putchar('1');
+		else
+			 _putchar('0');
+	}
 }

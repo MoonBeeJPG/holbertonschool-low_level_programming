@@ -6,7 +6,7 @@
 */
 int counting(unsigned long int a)
 {
-	long unsigned int counter = 0;
+	unsigned long int counter = 0;
 
 	while (a != 0)
 	{

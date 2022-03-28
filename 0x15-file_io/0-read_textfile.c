@@ -15,7 +15,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		 return (0);
 
-	open = open(filename.txt, O_RDONLY);
+	open = open(filename, O_RDONLY);
 	
 	if (open == -1)
 		return (0);
@@ -29,14 +29,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (!read)
 		return (0);
-	while (filename != NULL)
-	{
-	fp = read("filename.txt");
-		count++;
-	}
-	if (count < letters)
+	
+	write = (filename, buff, letters);
+
+	if (!write)
 		return (0);
-	close(fp);
-	return (count);
+
+	free(buff);
+	close(open);
+	return (write);
 		
 }

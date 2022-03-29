@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content[i] == '\0')
 	{
 		close(op);
-		return (-1);
+		return (1);
 	}
 	wr = write(op, text_content, i);
 

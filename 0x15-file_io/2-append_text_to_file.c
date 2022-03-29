@@ -6,12 +6,12 @@
 */
 unsigned int _strlen(const char *string)
 {
-    unsigned int i = 0;
+	unsigned int i = 0;
 
-    while (string[i] != '\0')
-        i++;
+	while (string[i] != '\0')
+		i++;
 
-    return (i);
+	return (i);
 }
 /**
 * append_text_to_file - A function that appends text at the end of a file.
@@ -41,7 +41,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (wr == -1)
 	{
-		close (op);
+		close(op);
 		return (-1);
 	}
 	close(op);

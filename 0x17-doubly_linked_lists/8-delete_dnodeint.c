@@ -7,7 +7,6 @@
 * @index: Index of the node that should be deleted, it starts at 0
 *
 * Return: 1 if it succeeded, -1 if it failed
-
 */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
@@ -16,8 +15,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (current == NULL)
 		return (-1);
-	if (idx == 0)
-		return (-1)
+	if (index == 0)
+		return (-1);
 	while (current != NULL)
 	{
 		if (count == index)
@@ -27,6 +26,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		count++;
 		current = current->next;
 	}
-	free (current);
+	free(current);
 	return (1);
 }

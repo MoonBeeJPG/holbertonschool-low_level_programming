@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* add_dnodeont_end - A function that adds a new node at the end 
+* add_dnodeint_end - A function that adds a new node at the end
 * of a dlistint_t list
 *
 * @head: Header of the double linked list
@@ -10,10 +10,10 @@
 */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *new_node, *temp = *head; 
-	
+	dlistint_t *new_node, *temp = *head;
+
 	new_node = malloc(sizeof(dlistint_t));
-	
+
 	if (!head)
 		return (NULL);
 	if (!new_node)

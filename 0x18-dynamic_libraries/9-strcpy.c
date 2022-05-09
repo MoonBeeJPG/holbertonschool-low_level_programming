@@ -1,23 +1,5 @@
 #include "main.h"
 /**
- *_strlen - fghjk
- *@s: dfghj
- *Return: tyu
- */
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (*s != '\0')
-	{
-		i++;
-		s++;
-	}
-
-	return (i);
-}
-
-/**
  *_strcpy - asd
  *@dest: asd
  *@src: asd

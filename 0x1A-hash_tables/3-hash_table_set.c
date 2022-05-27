@@ -9,12 +9,13 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *new_node, *current = ht->array[index];
+	hash_node_t *new_node, *current;
 	char *new_value;
 
 	if (key == NULL || ht == NULL || ht->array == NULL || *key == 0)
 		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
+	current = ht->array[index];
 	while (current != NULL)
 	{
 		if (strcmp(current->key, key) == 0)

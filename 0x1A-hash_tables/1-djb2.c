@@ -2,9 +2,9 @@
 /**
 * hash_djb2 - A hash function implementing the djb2 algorithm
 *
-* @str: String
+* @str: String used to generate hash value
 *
-* Return: Hash table
+* Return: Hash value
 */
 unsigned long int hash_djb2(const unsigned char *str)
 {

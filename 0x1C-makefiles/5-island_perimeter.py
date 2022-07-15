@@ -7,15 +7,15 @@ def island_perimeter(grid):
     1 represents a land zone """
     perimeter = 0
 
-    for i in range(len(grid)):
-        for j in range(len(grid)):
-            if grid[i][j] == 1:
-                if i == 0 or grid[i - 1][j] == 0:
+    for x in range(len(grid)):
+        for y in range(len(grid)):
+            if grid[x][y] == 1:
+                if x == 0 or grid[x - 1][y] == 0:
                     perimeter += 1
-                if i == len(grid) - 1 or grid[i + 1][j] == 0:
+                if x == len(grid) - 1 or grid[x + 1][y] == 0:
                     perimeter += 1
-                if j == 0 or grid[i][j - 1] == 0:
+                if y == 0 or grid[x][y - 1] == 0:
                     perimeter += 1
-                if j == len(grid) - 1 or grid[i][j + 1] == 0:
+                if y == len(grid[x]) - 1 or grid[x][y + 1] == 0:
                     perimeter += 1
     return perimeter

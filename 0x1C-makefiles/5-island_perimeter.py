@@ -5,9 +5,10 @@
 def island_perimeter(grid):
     """ grid is a list of list of integers: 0 represents a water zone, 
     1 represents a land zone """
-    i, j, perimeter = 0, 0, 0
+    perimeter = 0
 
     for i in range(len(grid)):
+        j = 0
         for j in range(len(grid)):
             if grid[i][j] == 1:
                 perimeter += 4

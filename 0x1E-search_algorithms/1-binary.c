@@ -28,7 +28,7 @@ int binary_search(int *array, size_t size, int value)
 			{
 				return (j);
 			}
-			else if (array[j] == value)
+			else if (array[j] > value)
 			{
 				sizee = j - 1;
 			}
